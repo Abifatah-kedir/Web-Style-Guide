@@ -1,0 +1,60 @@
+
+
+
+
+
+
+/* ================================= 
+Base Element Styles
+==================================== */
+
+* {
+box-sizing: border-box;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-weight: normal;
+}
+p {
+    font-size: .95em;
+    margin: 0 0 1em 0;
+    font-weight: normal;
+}
+
+h2,
+h3 {
+    margin: 0 0 .8em 0;
+}
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+ul {
+    a {
+        &:hover {
+            background-color: $strong-green;
+            color: white;
+            font-weight: bold;
+        }
+    }
+}
+h4 {
+        display: flex;
+        margin: auto;
+        width: 90%;
+    }
+
+
+h1 {
+    color:$strong-green;
+    font-size: 1.6em;
+    font-weight: bold;
+    width: 90%;
+    margin-left: 10px;
+}
+
+

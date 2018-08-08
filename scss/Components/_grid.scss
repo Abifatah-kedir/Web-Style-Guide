@@ -1,0 +1,263 @@
+
+.container {
+    // max-width: px;
+    width: 95%;
+    @include flex;
+    flex-direction: column;
+    margin: 5px auto;
+    // border: 2px red solid;
+    padding: 0px 5px ;
+}
+
+
+
+#type {
+    margin: 5px 0px;
+}
+
+// .headline--secondary ,
+// .headline--primary {
+    
+// }
+.headline--secondary{
+    width:85%;
+    // border: 1px solid red;
+    font-weight: 100;
+    font-size: 1.5em;
+}
+
+.card p {
+    // border: 1px green solid;
+    margin-left: 5px;
+}
+.blockquote {
+    border-left: 8px solid $strong-green;
+    border-radius: 3%;
+    padding-left: 15px;
+    
+}
+
+/********************************
+     grid layout colors 
+*******************************/
+
+.grid__row > .theme__colors {
+        background-color: $grid-color-green-12;
+    }
+   
+//grid colors
+
+.grid__col--12.theme__colors {
+    background-color:$grid-color-green-12;
+}
+.grid__col--6.theme__colors {
+background-color: $grid-color-blue-color-6;
+}
+
+.grid__col--4.theme__colors {
+background-color:  $grid-color-light-blue-4;
+}
+
+.grid__col--3.theme__colors {
+background-color: $grid-color-purple-3;
+}
+.grid__col--5.theme__colors {
+background-color: $grid-color-green-5;
+}
+.grid__col--7.theme__colors {
+background-color:  $grid-color-red-wood-7;
+}
+.grid__col--8.theme__colors {
+background-color: $grid-color-red-8;
+}
+
+
+
+// buttons-grid layout colors.
+
+
+.btn--default {
+    background-color: $button-color-blue;
+}
+.btn--success {
+    background-color: $button-color-green;
+}
+
+.btn--error {
+    background-color:$button-color-red;
+}
+.btn--warning {
+    background-color:  $button-color-warning;
+}
+.btn--info {
+    background-color:   $button-color-srong-purple;
+}
+
+
+
+/*************************************
+    Small mobile media queries 
+*************************************/
+
+    .grid__row {
+        @include smallScreen {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+    
+            .theme__colors{
+                padding: 3px;
+                margin: 5px auto;
+                // border: 2px red solid;
+                border-radius: 5px;
+                flex: 1;
+            }
+
+        }
+
+      
+
+    
+        .grid__col--12 {
+            @include smallScreen { 
+                @include flex;
+
+                button {
+                    @include flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 10px;
+                    padding: 8px;
+                    text-transform: uppercase;
+                    // border: 2px blue solid;
+                }
+            }
+        
+    }
+
+
+}
+
+
+/*************************************
+   Large Screen and Desktop media queries 
+*************************************/
+    .grid__row {
+        @include largeScreen {
+            @include flex;
+            width: 85%;
+            // border: 2px solid green;
+            margin: 5px auto;
+            flex-wrap: wrap;
+        }
+        
+        
+    }
+ 
+
+    // columns
+    .grid__col--12,
+    .grid__col--5,
+    .grid__col--8,
+    .grid__col--3,
+    .grid__col--7,
+    .grid__col--4,
+    .grid__col--6
+    {
+        @include largeScreen {
+            @include flex;
+            flex: 1;
+            margin: 5px;
+            // border: 2px red solid;
+            flex-wrap: wrap;
+            // margin: 0px auto;
+        }
+    }
+    // .grid__col--3 {
+    //     margin: 0px auto;
+    // }
+  
+
+    .card {
+        @include largeScreen {
+            width: 100%;
+        }
+    }
+ 
+    .grid__row {
+        .theme__colors{ 
+            @include largeScreen {
+                // border: 2px red solid;
+                @include flex;
+                justify-content: center;
+                align-items: center;
+                font-weight: bold;
+                border-radius: 5px;
+                padding: 6px;
+                // margin:5px;
+            }
+          
+        }
+    
+
+        .grid__col--12 {
+            @include largeScreen {
+                @include flex;
+                flex: 1;
+                width: 100%;
+                // flex-direction: row;
+            }
+         
+            button {
+                @include largeScreen {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin: 10px;
+                    padding: 10px;
+                    text-transform: uppercase;
+
+                }
+               
+            }
+        }
+    
+        // mixin extend.
+
+   
+        .grid__col--12 {
+
+            button {
+                // @include largeScreen {
+                    @include grid-flows;
+                // }
+            }
+        }
+
+        .grid__col--3 {
+            @include largeScreen {
+                @include grid-flows;
+                margin: 5px;
+            }
+        }
+
+        .grid__col--7  {
+            @include largeScreen {
+                flex: 2;
+            }
+        }
+
+        .grid__col--8 {
+            @include largeScreen {
+                flex: 2;
+            }
+        }
+    }
+
+    .centered {
+        @include largeScreen {
+            width: 30%;
+            // margin: 0px auto;
+        }
+    }
+

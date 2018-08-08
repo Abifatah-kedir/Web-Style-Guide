@@ -1,0 +1,124 @@
+    .grid__col--9 a {
+        font-size: .95em;
+        color: #3acec2;
+    }
+
+
+
+
+    .grid__row {
+        @include smallScreen {
+        width: 88%;
+        margin: 15px auto;
+        display: flex;
+        flex-direction: column;
+        }
+    }
+    
+
+    .grid__col--3,
+    .grid__col--4,
+    .grid__col--5,
+    .grid__col--7,
+    .grid__col--6,
+    .grid__col--8,
+    .grid__col--9,
+    .grid__col--12,
+    .form,
+    .card,
+    .blockquote,
+    .img--frame {
+        @include smallScreen {
+            @include flex;
+            flex-direction: column;
+            width: 100%;
+            // margin: 15px auto;
+            // border: 1px solid blue;
+            font-weight: bold;
+            padding: 5px;
+            margin: 5px auto;
+            border-radius: 10px;
+        }
+    }
+    // [role="navigation"] {
+    //     padding-top: .5em;
+    //     padding-bottom: .5em;
+    //     border: 2px red solid;
+    // }
+   /* ---- Navigation ---- */
+
+.grid__col--9 {
+    @include smallScreen {
+    margin-top: 5px;
+    }
+}
+.grid__col--3 a,
+.grid__col--9 a {
+    @include smallScreen {
+        text-align: center;
+        display: block;
+        padding: 10px 15px;
+    }
+}
+
+
+    // .grid__row { 
+    //     @include smallScreen {
+
+    //     display: flex;
+    //     width: 90%;
+    //     border: 2px solid green;
+    //     margin: 5px auto;
+    //     flex-wrap: wrap;
+        
+    // }
+    a.link {
+        margin: 0px;
+        padding: 0px;
+    }
+    .nav {
+        @include largeScreen{
+            @include flex;
+            flex-direction: column;
+            margin: 15px;
+            flex-wrap: wrap;
+
+        }
+        
+    }
+    .grid__col--3 a,
+    .grid__col--9 nav,
+    .nav { 
+        @include largeScreen{
+            @include flex;
+            flex-direction: column;
+            margin: 5px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .grid__col--3,
+    .grid__col--9,
+    .nav  {
+        @include largeScreen{
+            margin:  auto;
+        }
+    }
+    .nav {  
+        @include largeScreen {
+        flex-direction: row;
+        li a{
+            padding: 5px;
+            margin: 5px;
+            font-size: 1.2em;
+        }
+    }
+    }
+
+    .card {
+        @include largeScreen{
+            height: 100%;
+            padding: 10px;
+        }
+    }

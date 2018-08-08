@@ -1,0 +1,27 @@
+.form {
+
+    display: flex;
+ 
+    flex-direction: column;
+ 
+    width: 100%;
+ 
+    margin: 0px 10px;
+ 
+ 
+ 
+    &__input {
+ 
+        width: 100%;
+ 
+        padding:5px;
+ 
+        border-bottom: 8px solid $base-green-color;
+ 
+        margin: 8px 0;
+ 
+        box-sizing: border-box;
+ 
+    }
+ 
+ }

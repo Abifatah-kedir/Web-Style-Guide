@@ -1,0 +1,39 @@
+// Descriptive color variables
+
+$base-green-color:#57a057;
+$strong-green: darken($base-green-color,0%);
+$middle-green: lighten($base-green-color, 25%);
+$grid-color-green: #00A693;
+
+
+// $complementry-color: complement($base-color);
+
+   $grid-color-green-12: rgb(53, 241, 219);
+    $grid-color-blue-color-6: teal;
+    $grid-color-light-blue-4: rgb(56, 166, 218);
+    $grid-color-purple-3: #AF52AE;
+    $grid-color-green-5:#4CAF50;
+    $grid-color-red-wood-7: #A45A52;
+    $grid-color-red-8: #e75c11;
+
+
+//buttons colors
+    $button-color-blue:#2196F3;
+    $button-color-green:#4CAF50;
+    $button-color-red: #f44336;
+    $button-color-warning:  #e68a00;
+    $button-color-srong-purple: #A325E4;
+
+// font varibles
+
+$font-var: "source-sans-pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+
+// Media Query Breakpoints
+$breakpoint-s : 800px;
+$breakpoint-l : 801px;
+// $breakpoint-l
+
+// $width-container: 95%;
+// $width-sections: 80%;
+

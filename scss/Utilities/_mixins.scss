@@ -1,0 +1,26 @@
+@mixin grid-flows {
+    display: flex;
+    flex:1;             
+}
+
+@mixin flex {
+    display: flex;
+}
+
+//media queries 
+
+
+@mixin smallScreen {
+    @media (max-width: #{$breakpoint-s}) {
+      @content;
+    }
+  }
+
+
+@mixin largeScreen {
+    @media (min-width: #{$breakpoint-l}) {
+      @content;
+    }
+  }
+
+
